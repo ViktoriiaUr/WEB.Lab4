@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+.logo {
+    width: 80x;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(90deg, #efd7ed 0%, #aef3ff 100%);
+    color: #000;
+}
+
+.content-title {
+    color: #db11db;
+    font-size: 3.5em;
+    margin-top: 10px;
+}
+
+.content-descr {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #202020;
+    margin-top: 8px;
+}
+
+.box-blocks {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.box-icon {
+    width: 80px;
+    margin: -55px auto 15px;
+    display: block;
+}
+
+.box-title {
+    font-size: 1em;
+    color: #db11db;;
+    margin-bottom: 20px;
+}
+
+.box-descr {
+    color: #8a8989;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.box-button {
+    background-image: linear-gradient(#50ecf2, #d120d1);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.content .image-source {
+    font-size: 0.8em;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #333333;
+    color: #fff;
+    font-size: 0.7em;
+}
+
+@media (max-width: 750px) {
+    .content-descr {
+        margin-bottom: 20px;
+    }
+
+    .box-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        width: 90%;
+        max-width: 300px;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .box-button {
+        padding: 8px 16px;
+    }
+}
